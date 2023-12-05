@@ -57,7 +57,6 @@ main {
 
 h1 {
     color: #F5F7F8;
-    text-decoration: underline;
 }
 
 h2 {
@@ -121,6 +120,7 @@ footer div p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden; 
 }
 
 .players_name{
@@ -135,4 +135,12 @@ footer div p {
 
 .players {
     font-family: 'Basketball';
+}
+
+
+li{
+    color: white;
+}
+label {
+    color: white;
 }

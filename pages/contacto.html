@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NBA</title>
-        <link rel="icon" type="image/x-icon" href="../img/NBA-logo.png">
-        <!-- link de bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <!-- link de css -->
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA</title>
+    <link rel="icon" type="image/x-icon" href="../img/NBA-logo.png">
+    <!-- link de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- link de css -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg nav-bar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../img/NBA-logo.png" alt="" class="logo_header"></a>
+                <a class="navbar-brand" href="../index.html"><img src="../img/NBA-logo.png" alt=""
+                        class="logo_header"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -44,19 +47,25 @@
         </nav>
     </header>
     <main>
-        <form action="" method="get">
-            <p>Nombre: <input type="text" name="nombre" size="40"></p>
-            <p>Edad <input type="number" name="nacido" min="1900"></p>
-            <p>Sexo:
-                <input type="radio" name="hm" value="h"> Hombre
-                <input type="radio" name="hm" value="m"> Mujer
-            </p>
-            <textarea name="texto" rows="4" cols="20"></textarea>
-            <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-            </p>
-        </form>
+        <h1>CONTANOS QUE ES LO QUE MAS TE GUSTA DE LA NBA</h1>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Direccion de Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Deja tu comentario aqui</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div><button type="button" class="btn btn-dark">Enviar</button></div>
+        <img class="img_teams_city" src="../img/NBA-TROFEO.png" alt="">
     </main>
     <footer>
         <div>
@@ -82,4 +91,5 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
