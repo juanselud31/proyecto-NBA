@@ -36,7 +36,7 @@ header .navbar div a .logo_header {
   width: 80px;
 }
 header .navbar div button .menu-icon {
-  background-image: url(../../img/menu-hamburguesa.svg);
+  background-image: url(../img/menu-hamburguesa.svg);
 }
 header .navbar .menu-header {
   flex-grow: 0;
