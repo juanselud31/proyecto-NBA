@@ -23,7 +23,7 @@ main {
 /*fuentes*/
 @font-face {
   font-family: "Basketball";
-  src: url(../../fonts/Basketball.otf);
+  src: url(../fonts/Basketball.otf);
 }
 /*header*/
 header {
