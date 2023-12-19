@@ -1,0 +1,25 @@
+/*campeones*/
+main{
+    section{
+        .campeonesh1{
+            text-align: center;
+            h1{
+                color: nth($list: $colors, $n:2 );
+                font-family: $font-titles;
+                size: $size-h1;
+            }
+        }
+        .cardn{
+            padding-top: 10px;
+            .card{
+                background-color: nth($list: $colors, $n:1);
+                color: nth($list: $colors, $n:2 );
+                font-family: $font-titles;
+                cursor: default;
+                .card-body{
+                    @include flex(column,none,center,nowrap);
+                }
+            }
+        }
+    }
+}

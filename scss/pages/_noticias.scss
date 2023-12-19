@@ -1,0 +1,17 @@
+/*noticias*/
+main{
+    section{
+        .titulo-inicio{
+            @include flex(row, center, none, none,);
+            h1{
+                color:nth($list: $colors, $n:2);
+                    font-family: $font-titles;
+                    font-size: $size-h1;
+            }
+        }
+        .cardn{
+            @include flex(column,none,center,none);
+            gap: 10px;
+        }
+    }
+}
