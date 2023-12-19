@@ -1,189 +1,153 @@
-@font-face {
-    font-family: 'Basketball';
-    src: url(../fonts/Basketball.otf);
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Oswald&display=swap');
-
+/*reset*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Oswald&display=swap");
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style-type: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
-header {
-    font-family: 'Basketball';
-}
-
-.menu-header {
-    flex-grow: 0;
-}
-
-.logo_header {
-    width: 70px;
-}
-
+/*estilos globales*/
 body {
-    font-family: 'Bebas Neue', sans-serif;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    background-color: #191717;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Oswald", sans-serif;
+  background-color: #191717;
 }
 
-/* header */
-.logo img {
-    width: 80px;
-}
-
-.menu-icon {
-    background-image: url(./../img/menu-hamburguesa.svg);
-}
-
-.menu-ul {
-    align-items: center;
-}
-
-.nav-bar {
-    background-color: #01579B;
-}
-
-/* main */
 main {
-    padding: 10px;
+  padding: 10px;
 }
 
-h1 {
-    color: #F5F7F8;
-    font-family: "Basketball";
-    font-size: 3rem;
+/*fuentes*/
+@font-face {
+  font-family: "Basketball";
+  src: url(../../fonts/Basketball.otf);
+}
+/*header*/
+header {
+  font-family: "Basketball";
+}
+header .navbar {
+  background-color: #01579B;
+}
+header .navbar div a .logo_header {
+  width: 80px;
+}
+header .navbar div button .menu-icon {
+  background-image: url(../../img/menu-hamburguesa.svg);
+}
+header .navbar .menu-header {
+  flex-grow: 0;
+}
+header .navbar .menu-header .menu-ul {
+  align-items: center;
 }
 
-h2 {
-    color: #F5F7F8;
+/*index*/
+main section .contenido-inicio .titulo-inicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  flex-wrap: none;
+}
+main section .contenido-inicio .titulo-inicio h1 {
+  color: #F5F7F8;
+  font-family: "Basketball";
+  font-size: 3rem;
+}
+main section .contenido-inicio p {
+  color: #F5F7F8;
+  font-family: "Bebas Neue", sans-serif;
+}
+main section .contenido-inicio .h2-index {
+  text-align: center;
+}
+main section .contenido-inicio .h2-index h2 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #F5F7F8;
+}
+main .img_teams {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  flex-wrap: none;
+}
+main .img_teams .img_teams_city {
+  width: 90%;
 }
 
-p {
-    color: #F5F7F8;
+/*records*/
+main .titulo-inicio {
+  text-align: center;
+  font-family: "Basketball";
+}
+main .titulo-inicio h1 {
+  color: #F5F7F8;
+  font-size: 3rem;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main .container .card {
+  background-color: #01579B;
+  padding: 0, 15px, 15px, 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+main .container .card .img-card {
+  width: 100%;
+  border-radius: 7px;
+}
+main .container .card .players {
+  font-family: "Basketball";
+  color: #F5F7F8;
+}
+main .container .card .players_name {
+  text-align: center;
+  padding: 0 10px 0 10px;
+  color: #F5F7F8;
+}
+main .container .card p {
+  color: #F5F7F8;
 }
 
-.img_teams {
-    display: flex;
-    justify-content: center;
-}
-
-.img_teams_city {
-    width: 90%;
-}
-
+/*footer*/
 footer {
-    background-color: #01579B;
-    color: white;
-    padding-left: 20px;
+  background-color: #01579B;
+  color: #F5F7F8;
+  padding-left: 20px;
 }
-
 footer div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* flex-wrap: wrap; */
+  display: flex;
+  flex-direction: none;
+  justify-content: space-between;
+  align-items: none;
+  flex-wrap: none;
+  padding-top: 10px;
 }
-
-.footer_logos ul {
-    display: flex;
-}
-
-.footer_logos ul li {
-    margin-right: 10px;
-}
-
-.footer_text {
-    text-align: right;
-}
-
 footer div p {
-    font-size: 13px;
-    padding-right: 10px;
+  font-size: 13px;
+  padding-right: 10px;
+}
+footer div .footer_logos ul {
+  display: flex;
+}
+footer div .footer_logos ul li {
+  margin-right: 10px;
 }
 
-/* records */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.card {
-    background-color: #01579B;
-    padding: 0, 15px, 15px, 15px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-}
-
-.players_name {
-    text-align: center;
-    padding: 0 10px 0 10px;
-}
-
-.img-card {
-    width: 100%;
-    border-radius: 7px;
-}
-
-.players {
-    font-family: 'Basketball';
-}
-
-
-li {
-    color: white;
-}
-
-label {
-    color: white;
-}
-
-/* desktop */
-
-@media (min-width:1024px) {
-
-    /* inicio */
-    .contenido-inicio {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    h1 {
-        font-family: "Basketball";
-        font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-        font-family: 'Oswald', sans-serif;
-    }
-    .titulo-inicio {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    /* records */
-    .container {
-        width: 900px; 
-        display: grid;
-        grid-template-columns: 300px 300px 300px;
-        align-items: stretch;
-        margin: 0 auto; 
-    }
-
-    
-
-
-}
+/*# sourceMappingURL=style.css.map */

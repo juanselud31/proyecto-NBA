@@ -1,0 +1,26 @@
+/*header*/
+header {
+    font-family: 'Basketball'; 
+    .navbar{ background-color: nth($list: $colors, $n:1 );
+        div{
+            a{ 
+                .logo_header{
+                    width: 80px; ;
+                }
+            }
+            button{
+                .menu-icon{
+                    background-image: url(../../img/menu-hamburguesa.svg);
+                    }
+            }
+        }
+        .menu-header{
+            flex-grow: 0;
+        }
+        .menu-header{
+            .menu-ul{
+                align-items: center;
+            }
+        }
+    }
+}

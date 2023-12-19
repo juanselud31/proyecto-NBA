@@ -1,0 +1,31 @@
+/*index*/
+main{
+    section{
+        .contenido-inicio{
+            .titulo-inicio{
+                @include flex(row, center, none, none,);
+                h1{
+                    color:nth($list: $colors, $n:2);
+                    font-family: $font-titles;
+                    font-size: $size-h1;
+                }
+            }
+            p{ color: nth($list:$colors, $n:2); 
+                font-family: $font-body;
+            }
+            .h2-index{
+                text-align: center;
+                h2{
+                    font-family: $font-body;
+                    color: nth($list: $colors, $n:2 );
+                }
+            }
+        }
+    }
+    .img_teams{ 
+        @include flex(row,center,none,none);
+        .img_teams_city{
+            width: 90%;
+        }
+    }
+}

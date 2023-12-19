@@ -1,0 +1,37 @@
+/*records*/
+main{
+    .titulo-inicio{ text-align: center;
+        font-family: $font-titles;
+        h1{
+            color: nth($list: $colors, $n:2 );
+            font-size: $size-h1;
+        }
+    }
+    .container{
+        @include flex(column,none,center,wrap);
+        gap: 10px;
+        .card{
+            background-color: nth($list: $colors, $n:1 );
+            padding: 0, 15px, 15px, 15px;
+            border-radius: 8px;
+            @include flex(column,none,center,nowrap);
+            overflow: hidden;
+            .img-card{
+                width: 100%;
+                border-radius: 7px;
+            }
+            .players{
+                font-family: $font-titles;
+                color: nth($list: $colors, $n:2 );
+            }
+            .players_name{
+                text-align: center;
+                padding: 0 10px 0 10px;
+                color: nth($list: $colors, $n:2 );
+            }
+            p{
+                color: nth($list: $colors, $n:2 );
+            }
+        }
+    }
+}

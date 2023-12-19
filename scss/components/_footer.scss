@@ -1,0 +1,22 @@
+/*footer*/
+footer{
+    background-color: nth($list: $colors, $n:1 );
+    color: nth($list: $colors, $n:2 );
+    padding-left: 20px;
+    div{
+        @include flex(none,space-between,none,none);
+        padding-top: 10px;
+        p{
+            font-size: 13px;
+            padding-right: 10px
+        }
+        .footer_logos{
+            ul{ 
+                display: flex;
+                li{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
