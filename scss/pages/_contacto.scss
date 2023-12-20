@@ -1,0 +1,25 @@
+/*CONTACTO*/
+main{
+    .h1div{
+        width:100% ;
+        h1{
+            color: nth($list: $colors, $n:2 );
+            font-family: $font-titles;
+            font-size: $size-h1;
+            text-align: center;
+        }
+    }
+    .mb-3{
+        .form-label{
+            color: nth($list: $colors, $n:2 );
+            font-family: $font-body;
+        }
+    }
+    .nba-trofeo{
+        width: 100%;
+        @include flex(row,center,none,none);
+        .nba-trofeo-img{
+            width: 80%;
+        }
+    }
+}

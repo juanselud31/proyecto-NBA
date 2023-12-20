@@ -1,0 +1,176 @@
+/*MEDIA QUERIS*/
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /*inicio*/
+    main{
+        .contenido-inicio{
+            width: 100%;
+            margin: 0 auto;
+            .contenido{
+                width: 70%;
+                margin: 0 auto;
+                @include flex(column,none,center,none);
+                text-align: center;
+                p{
+                    font-size: 1.50rem;
+                }
+                .h2-index{
+                    font-size: 2rem;
+                }
+            }
+        }
+        .img_teams{
+            .img_teams_city{
+                width: 70%;
+            }
+        }
+    }
+    /*noticias*/
+    main{
+        section{
+            .container-noticias{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: stretch;
+                margin: 0 auto;
+                .cardn{
+                    .card{
+                        .car-body{
+                            .card-title{
+                                text-align: center;
+                            }
+                            .card-text{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+/*campeones*/
+    main{
+        section{
+            .container-campeones{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+/*records*/
+    main{
+        .container-records{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: stretch;
+        }
+    }
+    /*contacto*/
+    main{
+        .h1div{
+            width: 100%;
+            margin: 0 auto;
+            h1{
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+        .nba-trofeo{
+            @include flex(row,center,none,none);
+            width: 100%;
+            .nba-trofeo-img{
+                width: 70%;
+            }
+        }
+    }
+}
+/*escritorio*/
+@media screen and (min-width: 1025px) {
+    /*index*/
+    main{
+        .contenido-inicio{
+            width: 100%;
+            margin: 0 auto;
+            .contenido{
+                width: 80%;
+                margin: 0 auto;
+                @include flex(column,none,center,none);
+                text-align: center;
+                p{
+                    font-size: 1.50rem;
+                }
+                .h2-index{
+                    font-size: 2rem;
+                }
+            }
+        }
+        .img_teams{
+            .img_teams_city{
+                width: 70%;
+            }
+        }
+    }
+/*noticias*/
+    main{
+        section{
+            .container-noticias{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: stretch;
+                margin: 0 auto;
+                .cardn{
+                    .card{
+                        .car-body{
+                            .card-title{
+                                text-align: center;
+                            }
+                            .card-text{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*campeones*/
+    main{
+        section{
+            .container-campeones{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    }
+    /*records*/
+    main{
+        .container-records{
+            width: 900px;
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            justify-content: center;
+            align-items: stretch;
+            gap: 50px;
+            margin: 0 auto;
+        }
+    }
+    /*contacto*/
+    main{
+        .h1div{
+            width: 100%;
+            margin: 0 auto;
+            h1{
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+        .nba-trofeo{
+            @include flex(row,center,none,none);
+            width: 100%;
+            .nba-trofeo-img{
+                width: 30%;
+            }
+        }
+    }
+}
+

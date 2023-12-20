@@ -137,7 +137,7 @@ main .titulo-inicio h1 {
   color: #F5F7F8;
   font-size: 3rem;
 }
-main .container {
+main .container-records {
   display: flex;
   flex-direction: column;
   justify-content: none;
@@ -145,7 +145,7 @@ main .container {
   flex-wrap: wrap;
   gap: 10px;
 }
-main .container .card {
+main .container-records .card {
   background-color: #01579B;
   padding: 0, 15px, 15px, 15px;
   border-radius: 8px;
@@ -159,24 +159,50 @@ main .container .card {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   transition: all 400ms ease;
 }
-main .container .card:hover {
+main .container-records .card:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
-main .container .card .img-card {
+main .container-records .card .img-card {
   width: 100%;
   border-radius: 7px;
 }
-main .container .card .players {
+main .container-records .card .players {
   font-family: "Basketball";
   color: #F5F7F8;
 }
-main .container .card .players_name {
+main .container-records .card .players_name {
   text-align: center;
   padding: 0 10px 0 10px;
   color: #F5F7F8;
 }
-main .container .card p {
+main .container-records .card p {
   color: #F5F7F8;
+}
+
+/*CONTACTO*/
+main .h1div {
+  width: 100%;
+}
+main .h1div h1 {
+  color: #F5F7F8;
+  font-family: "Basketball";
+  font-size: 3rem;
+  text-align: center;
+}
+main .mb-3 .form-label {
+  color: #F5F7F8;
+  font-family: "Bebas Neue", sans-serif;
+}
+main .nba-trofeo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  flex-wrap: none;
+}
+main .nba-trofeo .nba-trofeo-img {
+  width: 80%;
 }
 
 /*footer*/
@@ -202,6 +228,154 @@ footer div .footer_logos ul {
 }
 footer div .footer_logos ul li {
   margin-right: 10px;
+}
+
+/*MEDIA QUERIS*/
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*inicio*/
+  main .contenido-inicio {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .contenido-inicio .contenido {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    flex-wrap: none;
+    text-align: center;
+  }
+  main .contenido-inicio .contenido p {
+    font-size: 1.5rem;
+  }
+  main .contenido-inicio .contenido .h2-index {
+    font-size: 2rem;
+  }
+  main .img_teams .img_teams_city {
+    width: 70%;
+  }
+  /*noticias*/
+  main section .container-noticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    margin: 0 auto;
+  }
+  main section .container-noticias .cardn .card .car-body .card-title {
+    text-align: center;
+  }
+  main section .container-noticias .cardn .card .car-body .card-text {
+    text-align: center;
+  }
+  /*campeones*/
+  main section .container-campeones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /*records*/
+  main .container-records {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+  /*contacto*/
+  main .h1div {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .h1div h1 {
+    width: 70%;
+    margin: 0 auto;
+  }
+  main .nba-trofeo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: none;
+    flex-wrap: none;
+    width: 100%;
+  }
+  main .nba-trofeo .nba-trofeo-img {
+    width: 70%;
+  }
+}
+/*escritorio*/
+@media screen and (min-width: 1025px) {
+  /*index*/
+  main .contenido-inicio {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .contenido-inicio .contenido {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    flex-wrap: none;
+    text-align: center;
+  }
+  main .contenido-inicio .contenido p {
+    font-size: 1.5rem;
+  }
+  main .contenido-inicio .contenido .h2-index {
+    font-size: 2rem;
+  }
+  main .img_teams .img_teams_city {
+    width: 70%;
+  }
+  /*noticias*/
+  main section .container-noticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    margin: 0 auto;
+  }
+  main section .container-noticias .cardn .card .car-body .card-title {
+    text-align: center;
+  }
+  main section .container-noticias .cardn .card .car-body .card-text {
+    text-align: center;
+  }
+  /*campeones*/
+  main section .container-campeones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /*records*/
+  main .container-records {
+    width: 900px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    align-items: stretch;
+    gap: 50px;
+    margin: 0 auto;
+  }
+  /*contacto*/
+  main .h1div {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .h1div h1 {
+    width: 70%;
+    margin: 0 auto;
+  }
+  main .nba-trofeo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: none;
+    flex-wrap: none;
+    width: 100%;
+  }
+  main .nba-trofeo .nba-trofeo-img {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
